@@ -2,6 +2,12 @@ body{
 
     background-color: #222;
 }
+
+.cover{
+  background-color: #001;
+  height: 100%;
+  width: 100%;
+}
 /* for animations */
 @-webkit-keyframes hue {
     from {
@@ -15,14 +21,14 @@ body{
 /* animation end */
 
 /* loader */
-/* #preloader{
+#preloader{
     background-color:#000000;
     position: fixed;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 10;
     
 }
 
@@ -36,7 +42,7 @@ body{
     margin-top: -35px;
     margin-left: -35px;
     background-repeat: no-repeat;
-} */
+}
 
 /* navbar */
 .nav{
@@ -44,7 +50,10 @@ body{
     height: 120px;
     width: 100%;
     margin-top: -17px;
-}
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
 
 /* logo */
 .logo{
@@ -54,40 +63,37 @@ body{
     margin-top: 15px;
     background-color: rgba(238, 13, 13, 0.363);
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.479),
-    10px 0 15px rgb(255, 0, 0),
+    10px 0 15px rgb(0, 204, 255),
     -10px 0 30px rgb(81, 255, 0);
     border-radius: 50%;
    
 }
 
 .logo:hover{
-    background-color: rgba(185, 27, 27, 0.616);;
-    box-shadow: 0 0 10px rgb(79, 248, 1),
-    10px 0 10px rgb(255, 0, 0);
+    background-color: rgba(37, 2, 2, 0.335);;
+    box-shadow: 0 0 10px rgb(248, 1, 1),
+    7px 0 10px rgb(51, 255, 0),
+    -7px 0 10px rgb(0, 255, 213);
     border-radius: 50%;
     transition: .5s;
     transform: scale(.9);
-
 }
 
 
 .nav_top{
-    color: white;
-    font-weight: bold;
-    margin-top: 45px;
-    margin-left: 20px;
-    font-size: 30px;
-    font-family: 'Dosis', Helvetica, Arial, sans-serif;
-    color:white;
-    text-shadow:
+  color: #f35626;
+  font-weight: bold;
+  margin-top: 45px;
+  margin-left: 20px;
+  font-size: 190%;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
+  text-shadow:
     0 0 22px  rgba(255, 149, 149, 0.616),
     0 0 40px  rgba(199, 27, 27, 0.664),
     0 0 60px  rgba(255, 230, 2, 0.5);
-    color: #f35626;
-	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, #00ff00);
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, #00ff00);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    -webkit-animation: hue 5s infinite linear;
+  -webkit-animation: hue 5s infinite linear;
 }
 
 
@@ -96,7 +102,6 @@ body{
     top: 30px;
     position: absolute;
     right: 30px;
-    
 }
 
 .fas, .far{
@@ -105,10 +110,11 @@ body{
     margin-left: 15px;
     transition: .5s;
     transform: scale(.8);
-    color: #f35626;
-	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a, #00ff00);
-	-webkit-background-clip: text;
+    color: #000000;
+	  background-image: -webkit-linear-gradient(92deg, #26f3d8, #000000, #00ff00);
+	  -webkit-background-clip: text;
     -webkit-animation: hue 5s infinite linear;
+    text-shadow:0 0 20px #00f7ff;
 }
 
 .fas:hover, .far:hover{
@@ -116,13 +122,17 @@ body{
     transform: translateY(-10px);
     color: #ffffff;
     text-shadow: 0 0 300px #ff6600,
-    0 0 30px  #ff0303,
-    10px 0 30px #ff0303,
+    0 0 30px  #03eaff,
+    10px 0 30px #039aff,
     -10px 0 30px #ffffff,
     -10px 0 30px #ff00ff;    
 }
 /* mid-section start */
-
+.carousel{
+  position: sticky;
+  top: 0;
+ z-index: -1;
+}
 
 
 /* mid-section end */
@@ -130,13 +140,14 @@ body{
 /* buttons start*/
 #buttons{
     margin-top: -10px;
+   
 }
 
 .pc_builds, .laptop, .gears, .accessories{
     height: 70px;
     width: 200px;
-    background-color: red;
-    margin-left: 110px;
+    background-color: rgb(3, 16, 134);
+    margin-left: 8%;
     margin-top: 10px;
     display: inline-block;
     padding: 6px;
@@ -144,24 +155,25 @@ body{
     font-weight: bold;
     color: white;
     text-decoration: none;
-	background-image: -webkit-linear-gradient(92deg, #ff5623, #775424, #1c5d1c);
+	background-image: -webkit-linear-gradient(92deg, #0b3306, #090629, #290324);
     -webkit-animation: hue 5s infinite linear;
     border-radius: 10px;
 
-    box-shadow: 0 10px 30px #32fb00,
-    10px 10px 30px #f50d0d,
-    -10px 10px 30px #0019fb;
+    box-shadow: 0 10px 30px #32fb004b,
+    10px 10px 30px #f50d0d46,
+    -10px 10px 30px #0019fb4d;
 
 }
 .pc_builds:hover, .laptop:hover, .gears:hover, .accessories:hover{
-    box-shadow: 0 10px 300px #ff6600,
-    0 10px 30px  #ff0303,
-    10px 10px 30px #ff0303,
-    -10px 10px 30px #ffffff,
-    -10px 10px 30px #ff00ff,
-    -10px 10px 30px #ff00ff inset,
-    10px 10px 30px #ff0303 inset,
-    0 10px 30px #ffffff inset;
+    box-shadow: 
+      0 10px 300px #c300ff,
+      0 10px 30px  #03ff6c,
+      10px 10px 30px #a303ff,
+      -10px 10px 30px #20a100,
+      -10px 10px 30px #0400ff,
+      -10px 25px 50px #0011ff inset,
+      10px 25px 50px #00af0f inset,
+      0 -25px 50px #1900ff inset;
     
     transform: scale(1.2);
     transform: translateY(-10px);
@@ -216,6 +228,7 @@ a{
 	padding: 10px 20px;
 	box-sizing: border-box;
 	font-family: calibri;
+  background-color: #222;
 }
 .type{
 	display: flex;
@@ -292,7 +305,7 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    margin-top: -100px;
+  margin-top: -100px;
 }
 
 .sliderMore{
@@ -301,24 +314,33 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    margin-top: -250px;
+  margin-top: -250px;
+  
 }
 
+
+
+/* bannar */
 #pcS, #secondtp{
-    background-color: red;
+   
     height: 80px;
     width: 100%;
     margin-top: 20px;
     padding: 6px;
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: black;
     padding-left: 70px;
-    box-shadow: 0 0 30px rgb(59, 4, 4) inset,
-    20px 0 30px rgb(1, 42, 22) inset,
-    -20px 0 30px rgb(61, 34, 2) inset;
-    background-image: -webkit-linear-gradient(92deg, #68220a, #945c0f, #0b790b);
+    text-shadow: 0 0 10px rgb(255, 2, 2),
+    3px 0 10px rgb(0, 255, 191),
+    -3px 0 10px rgb(38, 255, 0);
+    background-image: -webkit-linear-gradient(92deg, #1f0015, #0c011d, #022402);
     -webkit-animation: hue 5s infinite linear;
+}
+
+#pcS:hover , #secondtp:hover{
+  color: rgb(11, 48, 78);
+  transition: .9s;
 }
 
 #secondtp{
@@ -331,7 +353,7 @@ a{
 
 
 
-
+/* bannar end */
 
 
 
@@ -353,7 +375,7 @@ a{
   
   .container .card{
     position: relative;
-    background-color: #212121;
+   background: none;
     border: none;
   }
   
@@ -383,9 +405,9 @@ a{
       inset -20px 0 80px rgb(0, 255, 42),
       inset 20px 0 300px red,
       inset -20px 0 300px rgb(0, 255, 42),
-      0 0 50px #fff,
-      -10px 0 80px red,
-      10px 0 80px rgb(0, 255, 42);
+      0 0 50px rgba(255, 255, 255, 0.212),
+      -10px 0 80px rgb(49, 5, 5),
+      10px 0 80px rgba(0, 255, 42, 0.246);
   }
   
   
@@ -446,26 +468,25 @@ a{
     text-decoration:none;
     color: black;
     box-sizing: border-box;
-    outline : 1px dashed #333;
+    
     padding: 10px;
     margin: 15px 0 0;
     display: inline-block;
   }
   
   .container .card .face.face2 .content a:hover{
-    background: #333 ;
+    
     color: whitesmoke; 
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
   }
   
   .container .card .face.face2{
-    background-color: grey;
     box-shadow:
     inset 0 0 60px whitesmoke,
-    inset 50px 0 100px #0ff,
-    0 0 50px #fff,
-    10px 0 30px red,
-    -10px 0 30px rgb(60, 255, 0);
+    inset 
+    0 0 50px rgba(255, 255, 255, 0.212),
+    -10px 0 80px rgb(49, 5, 5),
+    10px 0 80px rgba(0, 255, 42, 0.246);
   }
   
 
@@ -478,26 +499,19 @@ a{
     width: 250px;
     margin-left: 40%;
     position: relative; 
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     padding-left: 30px;
     padding-top: 15px;
     font-weight: bold;
     border-radius: 20%;
     margin-top: 20px;
-    
-  }
-
-  .visitUs:hover{
+    background-color: #001;
+    text-shadow:0 0 20px rgb(0, 255, 221);
+    box-shadow: 0 0 30px #ffffff,
+    10px 10px 30px #145500,
+    -10px -10px 30px #07116b;
     border-radius: 50%;
-    transition: .7s;
-    transform: scale(.9);
-    background-color: rgb(255, 0, 76);
-    text-shadow:0 0 30px rgb(0, 255, 221);
-    box-shadow: 0 10px 30px #32fb00,
-    10px 10px 30px #f50d0d,
-    -10px 10px 30px #0019fb;
-
   }
 
   
@@ -514,9 +528,7 @@ a{
     box-shadow: 0 0 30px pink,
     10px 0 30px red,
     -10px 0 30px rgb(0, 247, 255);
-    transition: 5.9s;
-    transform: rotate(-35deg);
-    transform: scale(.7);
+    transition: .5s;
   }
 
   #location{
@@ -532,5 +544,19 @@ a{
     position: relative;
     margin-top: 130px;
     margin-left: -465px;
+    font-size: 20px;
+  }
+
+  #phoneNumImg{
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+  }
+
+  #phoneNum{
+    color: white;
+    position: relative;
+    margin-top: 150px;
+    margin-left: -235px;
     font-size: 20px;
   }
