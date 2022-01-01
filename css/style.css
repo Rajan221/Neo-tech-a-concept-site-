@@ -174,11 +174,6 @@ body {
 
 /* buttons end */
 
-p {
-  margin-top: 1000px;
-  color: white;
-}
-
 /* for the slider */
 a {
   text-decoration: none;
@@ -365,6 +360,7 @@ a {
     inset -20px 0 80px rgb(0, 255, 42), inset 20px 0 300px red,
     inset -20px 0 300px rgb(0, 255, 42), 0 0 50px rgba(255, 255, 255, 0.212),
     -10px 0 80px rgb(49, 5, 5), 10px 0 80px rgba(0, 255, 42, 0.246);
+  transition: 0.5s;
 }
 
 .container .card .face.face1 .content {
@@ -407,6 +403,7 @@ a {
 
 .container .card:hover .face.face2 {
   transform: translateY(0);
+  transition: 0.5s;
 }
 
 .container .card .face.face2 .content p,
@@ -430,6 +427,7 @@ a {
 .container .card .face.face2 .content a:hover {
   color: whitesmoke;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
 }
 
 .container .card .face.face2 {
@@ -439,6 +437,11 @@ a {
 }
 
 /* visit us page  */
+.contact_border {
+  border: solid white;
+  padding: 3%;
+}
+
 .visitUs {
   background-color: rgba(255, 0, 0, 0.5);
   height: 130px;
@@ -463,7 +466,7 @@ a {
   margin-top: 50px;
   margin-left: 50px;
   box-shadow: 0 0 30px pink;
-  height: 400px;
+  height: 380px;
 }
 
 .map:hover {
@@ -521,16 +524,15 @@ a {
   color: white;
   position: relative;
   margin-top: 230px;
-  margin-left: -220px;
+  margin-left: -260px;
   font-size: 23px;
   font-weight: bold;
 }
 
 #followUsIcons {
-  color: white;
   position: relative;
   margin-top: 290px;
-  margin-left: -95px;
+  margin-left: -160px;
 }
 
 #fb,
@@ -539,6 +541,7 @@ a {
 #yt {
   transform: scale(3);
   margin-left: 90px;
+  color: white;
 }
 
 #fb:hover,
@@ -598,11 +601,71 @@ a {
 }
 
 /* supersale start */
+
+.sale_border {
+  border: solid white;
+  padding: 7%;
+}
+
 #superSale {
-  height: 500px;
+  height: 400px;
   width: 38%;
   position: relative;
-  margin-top: 130px;
   margin-left: 80px;
+  margin-top: -4%;
+}
+
+.rush_shop {
+  color: white;
+  margin-top: -35%;
+  margin-left: 52%;
+}
+
+.rush_notes {
+  color: white;
+  padding-top: 10px;
+  margin-left: 53%;
+  width: 40%;
 }
 /* supersale end */
+
+/* end logo start */
+.end_logo_border {
+  /* border: solid white; */
+  padding: 4%;
+}
+
+.end_logo {
+  height: 17%;
+  width: 17%;
+  margin-left: 42%;
+  background-color: rgba(238, 13, 13, 0.226);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.479),
+    10px 0 15px rgba(0, 204, 255, 0.555), -10px 0 30px rgba(81, 255, 0, 0.609);
+  border-radius: 50%;
+}
+
+#logo_name {
+  color: white;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 40%;
+  font-family: "Cairo", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* end logo end */
+
+/* copyright start */
+.copyright {
+  color: white;
+
+  padding: 5%;
+  font-size: 15px;
+  border: solid white;
+}
+/* copyright end */
+
+/* extra css */
+/* extra css end */
